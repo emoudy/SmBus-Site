@@ -8,95 +8,132 @@ colors:
 
 * {
 	padding: 0px;
-	margin: 0 auto;
-	font-family: Verdana;
+	font-family: arial,sans-serif;
 	color: #113A63;
-}
-
-#main_container {
-	width: 70%;
+	font-size: 1em;
 }
 
 a {
 	text-decoration: none;
+	cursor: pointer;
 }
-
-p {
-	font-size: 14px;
-}
-/* -------HEADER------------- */
-
-li {
-	display: inline;
-	list-style-type: none;
-	padding: 0px 15px;
-	text-align: center;
-	color: #fff;
-}
- ul {
- 	text-align: right;
- 	vertical-align: middle;
- }
 
 nav {
-	width: 100%;
-	float: right;
-	background-color: #f26122;
-	border: 1px solid #113A63;
+	background-color: #113A63;
+	border-bottom: 10px solid #f26122;
 }
 
-div {
-	margin-top: 25px;
+li {
+	list-style-type: none;
+}
+
+/* -------HEADER------------- */
+
+div header {
+	position: relative;
+	height: 65px;
+	margin: 0;
+	font-variant: small-caps;
 }
 
 #headerName {
-	text-align: left;
+	display: block;
+	color: #fff;
 	float: left;
-	font-size: 40px;
-	padding: 0px;
+	font-size: 2.5em;
 }
 
+#navigation_header ul {
+	height: 100%;
+ 	text-align: right;
+ 	margin: 0 10px;
+	line-height: 64px;
+ }
+ 
+.nav_link {
+	width: 70px;
+	display: inline-block;
+	text-align: center;
+	border: 1px solid #f26122;
+	padding: 0px 10px;
+	background-color: #f26122;
+	font-weight: 700;
+	margin-right: 10px;
+}
+
+#navigation_header a:link {
+	padding-top: 21px;
+	padding-bottom: 21px;
+}
+
+#navigation_header a:hover {
+	color: #fff;
+}
+
+.nav_link:hover {
+	background-color: #fe803f;
+}
+
+
 /* -------MAIN CONTENT------------- */
+
+#main_container {
+	width: 70%;
+	clear: both;
+	margin: 30px auto 0 auto;
+}
 
 #hero {
 	width: 70%;
 	float: left;
-	clear: both;
 	margin-top: 0px;
 }
 
-   /*ARTICLE*/
+/* -------ARTICLE------------- */
+
+#book_cover {
+	float: left;
+	margin: auto 20px auto 0;
+	width: 188px;
+	height: 277px;
+}
 
 #book_description {
-	float: right;
-	width: 60%;
-	margin-top: 0px;
-}
-
-#book_description h3 {
-	margin-bottom: 10px;
 }
 
 #amazon_logo {
-	margin-top: 25px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 168px;
+	height: 46px;
 }
 
 /* -------ASIDE------------- */
 
 aside {
+
 	width: 25%;
 	float: right;
 	text-align: center;
-	margin-top: 52px;
+	background-color: #113A63;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-#media_links {
-	margin-top: 5px;
-	margin-bottom: 10px;
+#media_links img {
+	margin: 10px;
 }
 
 aside h3 {
+	color: #fff;
 	margin-bottom: 10px;
+}
+
+aside p {
+	color: #fff;
+	margin-top: 0px;
+	text-align: left;
 }
 
 /* ------- SECTION ------------- */
@@ -107,21 +144,26 @@ section {
 
 .social_media {
 	width: 100%;
-	float: left;
-	vertical-align: center;
+}
+
+.social_media h3 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.social_media p {
+	margin: 0;
 	height: 100px;
+	overflow: hidden;
 	border: 2px solid #dbdbdd;
-	color: #f26122;
-	margin-top: 15px;
-	margin-bottom: 15px;
 }
 
 /* ------- BAR ------------- */
 
 hr {
+	clear: both;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	width: 100%;
 	height: 15px;
-	clear: both;
 	background-color: #f26122;
-	margin-top: 15px;
 }
